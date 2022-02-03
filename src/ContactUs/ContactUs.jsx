@@ -8,7 +8,7 @@ function ContactUs() {
           <form action="" onSubmit={ e =>
           {
               e.preventDefault()
-              axios.post( "http://localhost:8080/contact-us/", {
+              axios.post( "https://parth-portfolio-api.herokuapp.com/contact-us", {
                   name: e.target[ 0 ].value,
                   email: e.target[ 1 ].value,
                   number: e.target[ 2 ].value,
